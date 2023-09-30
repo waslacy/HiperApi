@@ -1,0 +1,92 @@
+@font-face {
+  font-family: "Microsof Jenghei";
+  src: url("../src/microsoft-jhenghei.ttf") format("truetype");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Microsof Jenghei";
+  background: #353538;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+body::before {
+  opacity: 0.3;
+  position: absolute;
+  display: block;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: url(../../src/bg-oliva.png) no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+body .container {
+  background-color: rgba(75, 75, 77, 0.8);
+  padding: 3rem 6rem;
+  border-radius: 20px;
+  box-shadow: -8px -8px 50px rgba(75, 75, 77, 0.7), 8px 8px 50px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+body .container h1 {
+  font: 500 2.6em Arial, Helvetica, sans-serif;
+  color: #FEFEFE;
+}
+body .container .form-group {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+body .container .form-group:last-child {
+  margin-bottom: 0;
+}
+body .container .form-group label {
+  color: #FEFEFE;
+  font-size: 1.2em;
+}
+body .container .form-group input {
+  padding: 12px 28px;
+  background-color: transparent;
+  border: 2px solid #E6E6E6;
+  border-radius: 10px;
+  outline: none;
+  color: #FEFEFE;
+  font-size: 1em;
+  text-align: center;
+}
+body .container .form-group input:focus:not(input[type=submit]) {
+  width: 120%;
+}
+body .container .form-group input[type=submit] {
+  margin-top: 20px;
+  background: transparent;
+  padding: 12px 28px;
+  color: #FEFEFE;
+  border-radius: 20px;
+  align-self: center;
+  transition: 0.2s linear;
+}
+body .container .form-group input[type=submit]:hover {
+  background-color: #2D2F62;
+  border-color: #2D2F62;
+  box-shadow: 0 0 20px rgba(45, 47, 98, 0.6);
+}
+
+.erros p {
+  text-align: center;
+  color: red;
+}/*# sourceMappingURL=login.css.map */

@@ -1,0 +1,20 @@
+@font-face {
+    font-family: "Microsof Jenghei";
+    src: url("../src/microsoft-jhenghei.ttf") format("truetype");
+}
+
+$font-title: Arial, Helvetica, sans-serif;
+$font-text: "Microsof Jenghei";
+
+$color-primary: #2D2F62;
+$color-chumbo: #4B4B4D;
+$color-branco: #FEFEFE;
+$color-primary-lighter: #5A5B82;
+$color-chumbo-darker: #353538;
+
+@mixin flex($justify, $align, $direction) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+}

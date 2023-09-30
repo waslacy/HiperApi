@@ -1,0 +1,242 @@
+@font-face {
+  font-family: "Microsof Jenghei";
+  src: url("../src/microsoft-jhenghei.ttf") format("truetype");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 30px;
+  margin: auto;
+}
+
+a.btn {
+  display: inline-block;
+  padding: 10px 24px;
+  background-color: transparent;
+  color: #FEFEFE;
+  border: 1px solid #FEFEFE;
+  text-decoration: none;
+  border-radius: 5px;
+  outline: none;
+  transition: 0.2s linear;
+}
+a.btn:hover {
+  background-color: #FEFEFE;
+  color: #111;
+}
+
+body {
+  font-family: "Microsof Jenghei";
+  background: #353538;
+  min-height: 100vh;
+}
+body::before {
+  opacity: 0.3;
+  position: absolute;
+  display: block;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: url(../../src/bg-oliva.png) no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+header {
+  border-bottom: 1px solid #fff;
+  margin-bottom: 60px;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+header .container a.btn {
+  margin-left: 20px;
+}
+
+.infos {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+  margin: 40px 0;
+}
+.infos .info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(75, 75, 77, 0.8);
+  width: calc(33% - 20px);
+  height: 200px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5), 5px 5px 10px 1px rgba(255, 255, 255, 0.2) inset;
+  gap: 20px;
+  color: #fff;
+}
+.infos .info i {
+  font-size: 2.6em;
+}
+.infos .info h2 {
+  font: 300 1.1em Arial, Helvetica, sans-serif;
+}
+.infos .info h4 {
+  font: 300 1.3em Arial, Helvetica, sans-serif;
+}
+
+section .buttons {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: row;
+  gap: 40px;
+}
+section .buttons button {
+  font-size: 1.2em;
+  display: inline-block;
+  padding: 14px 32px;
+  background-color: #FEFEFE;
+  color: #111;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  transition: 0.2s linear;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+section .buttons button:hover {
+  background-color: #2D2F62;
+  color: #fff;
+}
+
+#tabela-clientes .clientes {
+  width: 100%;
+  padding: 40px 60px;
+  background-color: rgba(75, 75, 77, 0.8);
+  border-radius: 20px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5), 5px 5px 10px 1px rgba(255, 255, 255, 0.2) inset;
+  color: #fff;
+}
+#tabela-clientes .clientes table {
+  border-collapse: collapse;
+  width: 100%;
+}
+#tabela-clientes .clientes .clientes-title {
+  font: 300 1.2em Arial, Helvetica, sans-serif;
+}
+#tabela-clientes .clientes .clientes-title tr {
+  border-bottom: 1px solid #fff;
+}
+#tabela-clientes .clientes .clientes-title tr th {
+  padding-bottom: 10px;
+}
+#tabela-clientes .clientes .clientes-body tr {
+  border-bottom: 1px solid #b3b3b3;
+}
+#tabela-clientes .clientes .clientes-body tr td {
+  padding: 20px 0;
+  text-align: center;
+}
+#tabela-clientes .clientes .clientes-body tr td.actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+}
+#tabela-clientes .clientes .clientes-body tr td.actions i {
+  color: #fff;
+}
+#tabela-clientes .clientes .clientes-body tr td.actions i:hover {
+  color: #2D2F62;
+}
+
+section#filtro {
+  margin-bottom: 40px;
+}
+section#filtro .container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  flex-direction: row;
+}
+section#filtro .container form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+  padding: 20px 60px;
+  background-color: rgba(75, 75, 77, 0.8);
+  border-radius: 20px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5), 5px 5px 10px 1px rgba(255, 255, 255, 0.2) inset;
+  color: #fff;
+}
+section#filtro .container form .form-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+section#filtro .container form label {
+  font-size: 1.1em;
+  margin-right: 10px;
+}
+section#filtro .container form input[type=text] {
+  background-color: transparent;
+  border: 1px solid #fff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  outline: none;
+  color: #fff;
+}
+section#filtro .container form select {
+  padding: 10px 20px;
+  outline: none;
+  border-radius: 10px;
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+}
+section#filtro .container form select option {
+  color: #111;
+}
+section#filtro .container form input[type=submit] {
+  padding: 12px 28px;
+  border-radius: 10px;
+  border: none;
+}
+
+section#duvidas {
+  margin-bottom: 40px;
+}
+section#duvidas .container {
+  padding: 20px 60px;
+  background-color: rgba(75, 75, 77, 0.8);
+  border-radius: 20px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5), 5px 5px 10px 1px rgba(255, 255, 255, 0.2) inset;
+}
+section#duvidas .container h1 {
+  color: #fff;
+  font-size: 2em;
+  text-align: center;
+}
+section#duvidas .container .duvidas {
+  margin-top: 40px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  text-align: center;
+  color: #fff;
+}/*# sourceMappingURL=dashboard.css.map */
